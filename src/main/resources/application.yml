@@ -20,6 +20,14 @@ github:
   resource:
     userInfoUri: https://api.github.com/user
 
+security:
+  oauth2:
+    client:
+      client-id: alx
+      client-secret: alxsecret
+      scope: read,write
+      auto-approve-scopes: '.*'
+
 spring:
   jpa:
     database: postgresql
