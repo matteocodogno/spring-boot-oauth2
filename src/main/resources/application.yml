@@ -19,3 +19,14 @@ github:
     clientAuthenticationScheme: form
   resource:
     userInfoUri: https://api.github.com/user
+
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:49153/alexandria_db
+    username: alexandria
+    password: secret
